@@ -1,0 +1,9 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: [header-start] max-content [header-end content-start] auto [content-end footer-start] max-content [footer-end];
+}
+
+.page {
+    
+}
