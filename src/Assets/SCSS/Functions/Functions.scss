@@ -1,0 +1,10 @@
+@use "sass:string";
+
+@function iterate ($n, $label) {
+    $result: [start] 1fr ;
+    @for $_ from 2 through $n {
+        $result: $result + [#{$label}-#{$_}] 1fr ;
+    }
+    $result: $result + [end];
+    @return $result;
+}

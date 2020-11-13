@@ -5,13 +5,13 @@ class HomePage extends Component {
     render(){
         return(
             <div className="page">
-                <div className="header">
+                <div className="header developing-border">
                     HEADER
                 </div>
-                <div className="content">
+                <div className="content developing-border">
                     CONTENT
                 </div>
-                <div className="footer">
+                <div className="footer developing-border">
                     FOOTER
                 </div>
             </div>

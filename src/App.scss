@@ -1,7 +1,25 @@
+@import './Assets/SCSS/Functions/Functions.scss';
+
+* { box-sizing: border-box; }
+
+body{
+    margin: 0;
+}
+
 .container{
+    
+    .developing-border{
+        border: solid 1px black;
+    }
+    margin: 1%;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: iterate(12, column);
     grid-template-rows: [header-start] max-content [header-end content-start] auto [content-end footer-start] max-content [footer-end];
+
+    .page:nth-last-child(-n+3) {
+        grid-column-start: start;
+        grid-column-end: end;
+    }
 
     .header{
         grid-row-start: header-start;
